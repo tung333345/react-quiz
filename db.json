@@ -1,0 +1,202 @@
+{
+  "quizzes": [
+    {
+      "id": "1",
+      "title": "Trắc nghiệm Toán học",
+      "description": "Kiểm tra kiến thức toán học cơ bản với các câu hỏi thú vị!",
+      "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAlAMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAEBQMGAAECBwj/xAA5EAACAQMCBAQEAwcEAwEAAAABAgMABBESIQUxQVEGEyJhFDJxkQcjQhVSgaGxwdEzYuHxcpLwJf/EABgBAAMBAQAAAAAAAAAAAAAAAAECAwAE/8QAHhEAAgIDAQEBAQAAAAAAAAAAAAECEQMhMRJBE2H/2gAMAwEAAhEDEQA/AAX4ZdmNlaBtxiqtN4Y4v6yLKQrk4r1ZVRz5ocnFBS8StxMUdt84yKlHHFF3kkeQy+HOMBj/APnz8+1DPwniEbaXsrgN20GvclilZQUBKkZzRycPS6KRRtj9TvjJxVdE0rZ494T8A8Y8Ss7RR/C26H1T3CkLnsB1q7J+DFsoHm8amLddEKivTRcJbxLFFGixqMBVGK2J1kAYfapTl5LxxNbZ4D4m/Dzi/A3aSBfjrYcpIl9QHuv+KTWNncXJT4aF5G1gAKpO+a+lPINwx29PWlP7BuHkkjhgtuHWpY5liAaeQHscAL/M/StFOatiuo8KbwrwreyrH8VPa2kjjPlSSZf/ANRTdPBjOwWO/jz1yh5VC/hHifAeLHiPhqSGYSYWW3vSTq57h+YO9WS9fy9JzhsZODyNCWOKN7bAI/AsCjMt65P+1QK2/gq1A9F3L9cA1NF4ijhidryVI9HNmOBiurPxXwe9nWCHiVs0jbBRIMk+1LpBtgi+DIRu125+igUbwnwvwjh98L2SET3ajEcj76B7Dv703lkwhI50GZiWoOdcDV9GjOJOooC8CujIwVgeerkRUJuGXcGomuPNJB2brSp2yuPGpdKdf+EuDG6d/hgNZzgMQBXK+FeEA7WMbfXen98uxzQyOGjGOhwavCXwnmxeXaAYeAcMiUrHYwKCc4CispgpOOQFZT2QB7OXTw6Zx82nrQtlZJawefOAZ5Dnf9I6VvhXr9GTpJ9SmjLka9xkjrUbKBEN5qiOTvjFMfDzhkuMcwwFVwSEakXYZ5VdfD3C14daFpiTPLhmz07Cmiwxfl2dCzlnOdkTuaIis4YOpdu5NccQ4lHbAayAe2d6VT3s9xbSSI3lKOVJOasq5zmh+LiKBd2QfU1wb2Ej5lHbeqHL6FKTTSSu6ZyzbfYUPIWiwrZIf0pg0n7vgPyXS9vcxSAjWAaWX9nPcYMMkeB1P+KR2dgLVvOmllZjuVLnAqF+K3du5EEzvjkp3FD9H9N5XwJvvCVrxC1ki4hI7hjnMZ04I5VXB+Gln5wH7SlEYIOloxn71ZI/FDDAvrVkX95dwPrTBJYr2MS2pDK3I963piuKCbaFrazhtxK0ohQJrfm2BjJ960ZADuMVAkzRHTL96kaRW25ikYxqSUdKgLk+peY/mK1MNJ2O3aoNYBzmiGMvLtEszLLFq50pD4dt66ursWxbJOlhkAd6UJcsXJdsE9BVsfRs8lKI3W5HcD61lBwS5Q+jr1FZVrOOjdjJ8O+SMhjzNEdcnIH71DayHOPrUk1yQPzMH07k1FlBr4es/iuKCR11Rw+r1d+lWq9vlt0Iz6ug70DwSAWfCEcjDSDW2fptQ3mRyMbi+ZI0B2LNkfY8qVyoeKNyW3nr58xbUw69K44pH5fDwi7Z2x3qKXxRwHIg/aUIfpvR02i4iQnDxturg5BoVoN7KzeYe8jGnYKF2qRbXXcQkNlY99J60U9qPiDkbKftQs8vky6kPLlipVRS9B/ET+UxG7EZofhVtGITI4BONqHEs0yMX2XHOkXEvHFhwxjb28TXcibHBwq/5oq5MXiH12luVAVdWP086Tyefaya7MtEScnSM/w58qXWX4i20soju+GvECdijZ/lVhS7sOJ2wms3SRGG4YYIouLXTJphPDeNR8QBt5YikwHPofcd6JV2ik0PSFrRNYkgUI8fIg5ptFfLNiOdQkmfSe9KpBaDZz+XqpWZQ2SDU17LJCjRncEbGkqyyITnqadCG+KHMWrPy0pWbJ1KtH30mbST6UohcEnG+1VX8JPo6tZNUWWLZz3rVRWn+luRzrKYAY4AIOQR71LZwC64hbQ/NrkAP0oS2mjkXS68u5pz4Vi8zi7SADRChb+J2qbHRZ+K3LQxiJRkY2C1U/EbheFTSyoduWrkKtznU5fGSTy7Up8S2MvErHyYVjG+6vnDDqNqku7LfNHj/E+HW1rB591cQzSuTgREMNPQ7Hb6HvXof4QzyXPA7u1mYtBGwMRb9Ocgj+VU9vw7481z5USwC2J2kkn2A+gGavPAks/DvD/2fbSq8g/1nG2pv8V0TlGtEccJ2PbxIxIADqx2NL4LMTzFmAAHShTxFJWyjqRnBIPKj7djpzvXM2Wpror8bSG04Bcm3yCq4yOleZ2PD7bQZJ7iIaFP5erD525Drnf7V63xG0S/tJbWYZjlUqa874t4K4qrj4WMSsuwZXA1D396pjkkJONlOvZg8uYhgA7Gr94bspbiZGRTrkiVnx1O4pNZ/h/xyaYebBFDGCNTSTL/AEGa9O4HYLwe2CqY3nYAM/QAdBTZWnQuNNWCtbT2ybppUc6W3LpP64x+avI5xpqw3d0JcqxyQOgqr8UiJkLwbew2FRpFrGNrd/H2jRSYEqDlgc6hGkxkEb0lsrt7TiSF86ZCFYe/Q03u/RIGBwHGce9UiTYqvSQkqdMGltmTsANu1MuKNot5G6kYpVbNn5eVUSom+jy1UiM7HnWVq1OIsEnnWqYBAraZCAcVc/CqLFwya53zNIFzjoO33NUuccyox7E5q4+F5hP4fVEOWimIb+oqM+FIdLCHx1Ge1deWrNlhmgU8ySXI/TzppCgKhnOaEVY0tG1tlYe1UHxDZJw2+dFDOsmp1HMg9q9FadIlpDxR4JZondQWVtielUUNDYcjUio+H/DF/IBccWudIY6hEi4YDoCat3krGOwFEwOCo/zUV4VK4EmgjmaSUTSm5O2DtJGp/vXBnR1IV8FR9c1DKVMiE6CAPmzzoWe1VXaVC0JxnUDkH+FSaNZObpmGcKP40PLdYJD5AHal890ABG51Z6jrUEtzMiekI316UNhCp7yLfQ/PnS6a5yGKg/xqOe+CgebbEHuo2qH47zhpZPT023+9FaAwG+BeMyAEYp2k/wARwiG4PzbbUsuCGibKHTg71PZengsSgnDHrTroGCcZfEOM7sRil9sMkFq74xMZLpYh8sa5P1rVqgOBVyLHVmNUOcdaypbMKkOkjke9ZRADy5bcovLH/wAKP8KX6cPvWilfTHcgKW6KRyJ/pSwsNGxA+tRlj82CxHqAHfvU2vg6PTIXC5Vzg53J60Y0+F6Yx9qqXAuJJxOJLeWXF5CuB2kHf3O39+tPoZGGY7gYY9elThLw6HkrRDe3sp9ECliaCPD7ydxJcStgclHIU8igjDZFEYGOVdC2IpUIUlltXwVLKRtWzcRyqcEBjuVNMZIw+TsGHKk13CnqQthzuGpWxrs3LgkKQmOYoaQKZBpkePPLG4/5qCSzdpP9U4AxnNcGzbRp1nOdt+R71J0zEN/b62XKjUTkNHsGHeoo9k0sFcdDUsWuM6ScqThgTjB/tWpY8MG15zybo3sfehQSNI45dSrkH91htQ13YSRrqUaVJoo3CISGU6h+k9/Y1nxgYFRhs81IyfoaUIivHdcRJ6mchQPemN66WNpCrkKqJk5qRLOKO4F5IMMqnTCeX8KqHGOKPxG/cZIiU4Ucs+9UihZM6jla4mklf9TZ2pxaoNOxpVZJsOW/andsDuoxjoaoTD7Yfl7881lEW0eI+Tc+nKsogELY759u9aD4yu4J5moywEgPL6Vy8g1bEUrHB7p2SQSxOyNH8pU7g/8AW1XvgfHribh8f7WTWTykUYOPeqJEiPcKrNkMwzV3s4UCBBgqNgDUMjorBFkt7lJEDQzK4PIaqk+JYNg5+1IHtxEvpXH/AI0vubq7jB8qSVPrSrK0F47LbI4PqzvS68UzHbnVct+PX0TetllGN9a01tuMxXCDzU8onrzFU/Sxfzo20EiZyxII+1aDBd2YbDnRflw3MeY5A6/7WoC9sbKFR51z5OrlqfnS2GjUkkJkK6h6xt9aC+KVVOBqH6lohl4SiAvfp6eoYGo3vOCwShw7SFt8KNqNmog8qWY6dBaJvlfqKISGHh0ZmvZFDAels0uvPEciyPBBF5KdCR6j9KRsZp7nReSPIjbgsSce4rUZnHFb2fiN25BdNxpjB2I6EGhL61Z9DsMS8jt83/NOk4S5wrACMbq3ap57RpSIwpOnYkcqZSoVqxLw8t6VI60/tI4wBqBJ7ZpRdQC0uSrZJxnbrTbh8isvq67H3qhIcQ6mTKt6c7Y5VldW7AR4GwHICsogKYZMg5zqqEy7b0c0WRsN6Eng0rkkZ7AA1Yvhcx5Yb45kVX7iB7e5O/pY5A7VSLJSRYbWY+SMDNZQllMPJ3UHesqpMUsy6Nj9KFlb1Zbl3qVtl+lcWyfEXUUWcZYdKk3ookW3w5aqtkpK6dY1b0/+GUAYFL7ZBBGignYUa9yPLwM5rlbtnQkTLEoGOtRl/LJU/ehxd4PqDD3xUyyCQbD09zQsNEiysV9IGO5NYJSTpG+OeKgeIjJjOfpXCXPl5Ur6u9NYKGCqcZya50rqOvpyqFLhc41DVjlmpWbWq5bGaZCMFuovOPpbHauYoXAy+GI7iiGj7nnUUL5XDvq0/eiYinhLvhiujmD2oZY4YnIEgb3qS5nI1Iij1jfHL60ndrgzeTFpcjudqFhoPuLkKMyFSq89FCRXU0j/AJMLRoTzIBz/ADruC1/MMl3Icr+hOX2qO94j6NFssjEcl0YooFHc8dzK2HYqO+R/QUn4tbsyN5T6/L3zU8QvbqQ5kZVO+kbUXe2IW0MWrBYdDvTJ7A1oV2MuYdwedboO2BiV4ySdLY51ldKZznBorgmBxEHSM6diaysqM+Fo9LlAA3zb0fHCmBkZrKyuYsSmJNPyioDGuTtWqygEgfIQgEgZ6VzGoMm/YVlZWRjiaNUB0jB71HHcSHKEjANarKcUL1FogSd8VxpHq796ysosC6cyjTCCpwTjetrbxIowuc7nNbrKyMxVfXDxXbRIF05543plbW0UkCzOgL451lZTIDE93ezR3nkRlVT2UUwgQNZtI5Lt3Y1lZRAyszwqLiUgnds1lZWVRPRNrZ//2Q==",
+      "questions": [
+        {
+          "question": "1+1 bằng bao nhiêu?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": [
+            "2"
+          ]
+        },
+        {
+          "question": "5x2 bằng bao nhiêu?",
+          "options": [
+            "7",
+            "10",
+            "12",
+            "15"
+          ],
+          "correct": [
+            "10"
+          ]
+        }
+      ],
+      "code": "ABC123",
+      "totalTime": 2,
+      "allowRetry ": true,
+      "allowRetry": true
+    },
+    {
+      "id": "2",
+      "title": "Trắc nghiệm Lịch sử Việt Nam",
+      "description": "Tìm hiểu lịch sử Việt Nam qua các câu hỏi trắc nghiệm.",
+      "image": "",
+      "questions": [
+        {
+          "question": "Thủ đô của Việt Nam là gì?",
+          "options": [
+            "Hà Nội",
+            "TP.HCM",
+            "Đà Nẵng",
+            "Huế"
+          ],
+          "correct": [
+            "Hà Nội"
+          ]
+        },
+        {
+          "question": "Ai là vị vua đầu tiên của nhà Nguyễn?",
+          "options": [
+            "Gia Long",
+            "Minh Mạng",
+            "Thiệu Trị",
+            "Tự Đức"
+          ],
+          "correct": [
+            "Gia Long"
+          ]
+        }
+      ],
+      "code": "DEF456",
+      "totalTime": 10,
+      "allowRetry ": false
+    },
+    {
+      "id": "3",
+      "title": "Trắc nghiệm Tin học",
+      "description": "Kiểm tra kiến thức cơ bản về công nghệ thông tin.",
+      "image": "",
+      "questions": [
+        {
+          "question": "HTML là viết tắt của gì?",
+          "options": [
+            "Hyper Text Markup Language",
+            "High Text Machine Language",
+            "Hyper Tabular Markup Language",
+            "None of these"
+          ],
+          "correct": [
+            "Hyper Text Markup Language"
+          ]
+        },
+        {
+          "question": "CSS dùng để làm gì?",
+          "options": [
+            "Tạo cấu trúc web",
+            "Tạo kiểu dáng cho web",
+            "Xử lý logic",
+            "Quản lý cơ sở dữ liệu"
+          ],
+          "correct": [
+            "Tạo kiểu dáng cho web"
+          ]
+        }
+      ],
+      "code": "GHI789",
+      "totalTime": 10,
+      "allowRetry ": false
+    },
+    {
+      "id": "5c63",
+      "title": "adsasd",
+      "description": "123",
+      "image": "//cdn.tgdd.vn/Products/Images/42/197228/Kit/huawei-p30-pro-note-2.jpg",
+      "questions": [
+        {
+          "question": "1233",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "correct": "4"
+        },
+        {
+          "question": "sadasd",
+          "options": [
+            "1",
+            "23",
+            "33",
+            "3333"
+          ],
+          "correct": "3333"
+        }
+      ],
+      "code": "123"
+    },
+    {
+      "id": "1745922701491",
+      "title": "ádasd",
+      "description": "ádasda",
+      "image": "",
+      "code": "47KXWW",
+      "totalTime": 10,
+      "questions": [
+        {
+          "question": "ádasd",
+          "options": [
+            "11111",
+            "2222222",
+            "3333333",
+            "333333333"
+          ],
+          "correct": [
+            "333333333"
+          ]
+        }
+      ]
+    }
+  ],
+  "admins": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "admin123"
+    }
+  ],
+  "users": [
+    {
+      "id": "1745983844944",
+      "username": "tung123",
+      "password": "$2b$10$k3KgkiLZeHXgOJ/A5L/Vfeh9/m/.4SKusNS9is7aJZVlcZY8m7Ywe",
+      "avatar": "https://cdn.mobilecity.vn/mobilecity-vn/images/2024/11/top-meme-meo-cuc-dang-yeu-8.png.webp"
+    }
+  ],
+  "results": [
+    {
+      "id": "da00",
+      "userId": "1745983844944",
+      "username": "tung123",
+      "quizId": "1",
+      "score": 100,
+      "completedAt": "2025-05-01T04:32:51.860Z"
+    },
+    {
+      "id": "1746154226112",
+      "userId": "1745983844944",
+      "username": "tung123",
+      "quizId": "2",
+      "score": 0,
+      "completedAt": "2025-05-02T02:50:26.112Z"
+    },
+    {
+      "id": "0fe6",
+      "userId": "1745983844944",
+      "username": "tung123",
+      "quizId": "3",
+      "score": 100,
+      "completedAt": "2025-05-02T03:19:02.791Z"
+    }
+  ]
+}
