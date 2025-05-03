@@ -36,7 +36,7 @@ function UserRegister() {
 
     try {
       // --- Kiểm tra username tồn tại ---
-      const res = await fetch('${import.meta.env.VITE_API_URL}/users');
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/users`);
       if (!res.ok) throw new Error('Lỗi khi kiểm tra tài khoản');
       const users = await res.json();
       console.log('Users from API:', users.map(u => u.username)); // Chỉ log username
@@ -60,7 +60,7 @@ function UserRegister() {
       };
 
       // --- Gửi yêu cầu tạo tài khoản ---
-      const createRes = await fetch('${import.meta.env.VITE_API_URL}/users', {
+      const createRes = await fetch(`${import.meta.env.VITE_API_URL}/users`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(newUser),

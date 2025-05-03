@@ -95,7 +95,7 @@ function Result() {
               completedAt: new Date().toISOString(),
             };
 
-            const res = await fetch('${import.meta.env.VITE_API_URL}/results', {
+            const res = await fetch(`${import.meta.env.VITE_API_URL}/results`, {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify(resultData),

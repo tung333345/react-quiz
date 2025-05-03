@@ -289,7 +289,7 @@ function QuizForm() {
     if (!loading) setLoading(true);
 
     const method = id ? 'PUT' : 'POST';
-    const url = id ? `${import.meta.env.VITE_API_URL}/quizzes/${id}` : '${import.meta.env.VITE_API_URL}/quizzes';
+    const url = id ? `${import.meta.env.VITE_API_URL}/quizzes/${id}` : `${import.meta.env.VITE_API_URL}/quizzes`; // Sửa ở đây
 
     // Sử dụng finalCode đã chuẩn hóa để lưu
     const quizData = {

@@ -44,7 +44,7 @@ function AdminDashboard() {
   const handleDeleteQuiz = async () => {
     if (!quizToDelete) return;
     try {
-      const res = await fetch(`http://localhost:3001/quizzes/${quizToDelete.id}`, {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/quizzes/${quizToDelete.id}`, {
         method: 'DELETE',
       });
       if (!res.ok) throw new Error('Lỗi khi xóa quiz');
