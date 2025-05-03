@@ -1,7 +1,7 @@
 // c:\Users\Admin\quiz-web\src\App.jsx
 import React from "react"; // Import React ở đây
 import { Routes, Route } from "react-router-dom";
-import MainHomepage from "./components/MainHomePage";
+import MainHomepage from "./components/MainHomepage";
 import Quiz from "./components/Quiz";
 import Result from "./components/Result"; // Component Result
 import QuizForm from "./components/QuizForm";
