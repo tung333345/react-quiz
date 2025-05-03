@@ -5,7 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App.jsx';
 import './index.css';
 // Giả sử bạn đã tạo UserProvider trong UserContent.jsx
-import { UserProvider } from './components/content/UserContent';
+import { UserProvider } from './components/content/UserContent.jsx';
 // AuthProvider vẫn có thể cần thiết nếu bạn dùng cả hai trong App.jsx
 // import { AuthProvider } from './components/content/AuthContent';
 
