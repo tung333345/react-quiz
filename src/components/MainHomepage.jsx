@@ -18,7 +18,7 @@ function MainHomepage() {
   const fetchQuizzes = async () => {
     setLoading(true);
     try {
-      const res = await fetch('http://localhost:3001/quizzes');
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/quizzes`);
       if (!res.ok) throw new Error('Lỗi khi lấy danh sách quiz');
       const data = await res.json();
       console.log('Quizzes:', data);
