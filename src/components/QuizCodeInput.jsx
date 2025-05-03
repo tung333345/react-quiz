@@ -15,7 +15,7 @@ function QuizCodeInput() {
 
   // Fetch tiêu đề quiz để hiển thị
   useEffect(() => {
-    fetch(`http://localhost:3001/quizzes/${quizId}`)
+    fetch(`${import.meta.env.VITE_API_URL}/quizzes/${quizId}`)
       .then(res => {
         if (!res.ok) throw new Error('Không thể tải thông tin quiz');
         return res.json();
@@ -45,7 +45,7 @@ function QuizCodeInput() {
 
     try {
       // Fetch lại quiz để kiểm tra code (đảm bảo dữ liệu mới nhất)
-      const res = await fetch(`http://localhost:3001/quizzes/${quizId}`);
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/quizzes/${quizId}`);
       if (!res.ok) throw new Error('Không tìm thấy bài quiz');
       const quiz = await res.json();
       console.log('Quiz data for code check:', quiz);

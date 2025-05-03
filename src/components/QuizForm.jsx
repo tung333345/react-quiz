@@ -39,7 +39,7 @@ function QuizForm() {
   useEffect(() => {
     if (id) {
       setLoading(true);
-      fetch(`http://localhost:3001/quizzes/${id}`)
+      fetch(`${import.meta.env.VITE_API_URL}/quizzes/${id}`)
         .then((res) => {
           if (!res.ok) throw new Error('Không tìm thấy quiz');
           return res.json();
@@ -249,7 +249,7 @@ function QuizForm() {
         setLoading(true); // Bắt đầu loading cho việc kiểm tra
         try {
             console.log(`Kiểm tra mã trùng lặp: ${finalCode}`); // Log mã đang kiểm tra
-            const checkRes = await fetch(`http://localhost:3001/quizzes?code=${finalCode}`);
+            const checkRes = await fetch(`${import.meta.env.VITE_API_URL}/quizzes?code=${finalCode}`);
 
             // Kiểm tra lỗi mạng hoặc server
             if (!checkRes.ok) {
@@ -289,7 +289,7 @@ function QuizForm() {
     if (!loading) setLoading(true);
 
     const method = id ? 'PUT' : 'POST';
-    const url = id ? `http://localhost:3001/quizzes/${id}` : 'http://localhost:3001/quizzes';
+    const url = id ? `${import.meta.env.VITE_API_URL}/quizzes/${id}` : '${import.meta.env.VITE_API_URL}/quizzes';
 
     // Sử dụng finalCode đã chuẩn hóa để lưu
     const quizData = {

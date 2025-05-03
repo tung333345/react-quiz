@@ -21,7 +21,7 @@ function UserLogin() {
     console.log('User login attempt:', { username, password });
 
     try {
-      const res = await fetch('http://localhost:3001/users');
+      const res = await fetch('${import.meta.env.VITE_API_URL}/users');
       if (!res.ok) throw new Error('Lỗi khi kiểm tra tài khoản');
       const users = await res.json();
       console.log('Users from API:', users);

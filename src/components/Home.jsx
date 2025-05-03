@@ -24,7 +24,7 @@ function Home() {
   useEffect(() => {
     setLoading(true);
     // Bật trạng thái loading
-    fetch(`http://localhost:3001/quizzes/${quizId}`)
+    fetch(`${import.meta.env.VITE_API_URL}/quizzes/${quizId}`)
       // Gửi yêu cầu GET đến API với quizId
       .then((res) => {
         if (!res.ok) throw new Error('Không tìm thấy bài quiz!');

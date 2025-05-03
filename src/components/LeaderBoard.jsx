@@ -16,7 +16,7 @@ const [results, setResults] = useState([]);
   const fetchResults = async () => {
     try {
       // console.log('Fetching results from API...');
-      const response = await fetch('http://localhost:3001/results'); // Fetch results from API
+      const response = await fetch('${import.meta.env.VITE_API_URL}/results'); // Fetch results from API
       if (!response.ok) {
         throw new Error(`Failed to fetch results: ${response.status}`);
       }

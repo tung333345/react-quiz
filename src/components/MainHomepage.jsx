@@ -39,7 +39,7 @@ function MainHomepage() {
   useEffect(() => {
     let isMounted = true;
     if (isUserLoggedIn && userId) {
-      fetch(`http://localhost:3001/users/${userId}`)
+      fetch(`${import.meta.env.VITE_API_URL}/users/${userId}`)
         .then((res) => {
           if (!res.ok) {
             throw new Error('Không tìm thấy thông tin người dùng');

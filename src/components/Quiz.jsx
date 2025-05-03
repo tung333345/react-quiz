@@ -275,7 +275,7 @@ function Quiz() {
     const fetchData = async () => {
       dispatch({ type: actionTypes.FETCH_INIT }); // Bắt đầu fetch, reset state
       try {
-        const res = await fetch(`http://localhost:3001/quizzes/${quizId}`);
+        const res = await fetch(`${import.meta.env.VITE_API_URL}/quizzes/${quizId}`);
         if (!res.ok) throw new Error('Không thể tải dữ liệu quiz');
         const data = await res.json();
 

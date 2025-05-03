@@ -32,11 +32,11 @@ ChartJS.register(
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        const quizzesRes = await fetch('http://localhost:3001/quizzes');
+        const quizzesRes = await fetch(`${import.meta.env.VITE_API_URL}/quizzes`);
         if (!quizzesRes.ok) throw new Error('Lỗi khi lấy danh sách quiz');
         const quizzes = await quizzesRes.json();
 
-        const resultsRes = await fetch('http://localhost:3001/results');
+        const resultsRes = await fetch(`${import.meta.env.VITE_API_URL}/results`);
         if (!resultsRes.ok) throw new Error('Lỗi khi lấy kết quả');
         const results = await resultsRes.json();
         // Đảm bảo results là một mảng trước khi cập nhật state

@@ -37,7 +37,7 @@ function UserProfile() {
     // Chỉ fetch dữ liệu nếu có userId
     if (userId) {
       setLoadingUser(true); // Bắt đầu trạng thái loading
-      fetch(`http://localhost:3001/users/${userId}`) // Gọi API lấy thông tin user
+      fetch(`${import.meta.env.VITE_API_URL}/users/${userId}`) // Gọi API lấy thông tin user
         .then((res) => {
           // Nếu response không thành công (status không phải 2xx)
           if (!res.ok) {
@@ -140,7 +140,7 @@ function UserProfile() {
 
     try {
       // 4. Gửi yêu cầu cập nhật lên API
-      const res = await fetch(`http://localhost:3001/users/${userId}`, {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/users/${userId}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ password: hashedNewPassword }),
@@ -180,7 +180,7 @@ function UserProfile() {
 
     try {
       // Gửi yêu cầu cập nhật avatar
-      const res = await fetch(`http://localhost:3001/users/${userId}`, {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/users/${userId}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ avatar: avatarUrl }),

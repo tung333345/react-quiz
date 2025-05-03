@@ -33,7 +33,7 @@ function AdminRegister() {
     }
 
     try {
-      const res = await fetch('http://localhost:3001/admins');
+      const res = await fetch('${import.meta.env.VITE_API_URL}/admins');
       if (!res.ok) throw new Error('Lỗi khi kiểm tra tài khoản');
       const admins = await res.json();
       console.log('Admins from API:', admins);
@@ -51,7 +51,7 @@ function AdminRegister() {
         password,
       };
 
-      const createRes = await fetch('http://localhost:3001/admins', {
+      const createRes = await fetch(`${import.meta.env.VITE_API_URL}/admins`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(newAdmin),

@@ -41,12 +41,12 @@ function Result() {
       const attemptSave = async () => {
         try {
           // Fetch quiz data to get allowRetake
-          const quizRes = await fetch(`http://localhost:3001/quizzes/${quizId}`);
+          const quizRes = await fetch(`${import.meta.env.VITE_API_URL}/quizzes/${quizId}`);
           if (!quizRes.ok) throw new Error(`Không thể lấy thông tin quiz (status: ${quizRes.status})`);
           const quizData = await quizRes.json();
 
           // Check if result already exists
-          const checkRes = await fetch(`http://localhost:3001/results?userId=${userId}&quizId=${quizId}`);
+          const checkRes = await fetch(`${import.meta.env.VITE_API_URL}/results?userId=${userId}&quizId=${quizId}`);
           if (!checkRes.ok) throw new Error(`Không thể kiểm tra kết quả (status: ${checkRes.status})`);
           const existingResults = await checkRes.json();
 
@@ -67,7 +67,7 @@ function Result() {
                 completedAt: new Date().toISOString(),
               };
 
-              const updateRes = await fetch(`http://localhost:3001/results/${existingResult.id}`, {
+              const updateRes = await fetch(`${import.meta.env.VITE_API_URL}/results/${existingResult.id}`, {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(updatedResult),
@@ -82,7 +82,7 @@ function Result() {
             }
           } else {
             // Save new result
-            const userRes = await fetch(`http://localhost:3001/users/${userId}`);
+            const userRes = await fetch(`${import.meta.env.VITE_API_URL}/users/${userId}`);
             if (!userRes.ok) throw new Error(`Không thể lấy username (status: ${userRes.status})`);
             const userData = await userRes.json();
             const username = userData.username;
@@ -95,7 +95,7 @@ function Result() {
               completedAt: new Date().toISOString(),
             };
 
-            const res = await fetch('http://localhost:3001/results', {
+            const res = await fetch('${import.meta.env.VITE_API_URL}/results', {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify(resultData),
