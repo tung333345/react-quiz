@@ -18,7 +18,8 @@ function MainHomepage() {
   const fetchQuizzes = async () => {
     setLoading(true);
     try {
-      const res = await fetch(`${import.meta.env.VITE_API_URL}/quizzes`);
+      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3000'; // Fallback to localhost
+      const res = await fetch(`${apiUrl}/quizzes`); // Use the correct base URL
       if (!res.ok) throw new Error('Lỗi khi lấy danh sách quiz');
       const data = await res.json();
       console.log('Quizzes:', data);
@@ -39,7 +40,7 @@ function MainHomepage() {
   useEffect(() => {
     let isMounted = true;
     if (isUserLoggedIn && userId) {
-      fetch(`${import.meta.env.VITE_API_URL}/users/${userId}`)
+      fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:3000'}/users/${userId}`)
         .then((res) => {
           if (!res.ok) {
             throw new Error('Không tìm thấy thông tin người dùng');

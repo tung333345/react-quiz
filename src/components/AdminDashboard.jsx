@@ -9,7 +9,6 @@ import 'react-toastify/dist/ReactToastify.css';
 Modal.setAppElement('#root');
 
 function AdminDashboard() {
-  // ... (các state và hàm khác giữ nguyên) ...
   const [quizzes, setQuizzes] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
@@ -28,16 +27,16 @@ function AdminDashboard() {
   const fetchQuizzes = async () => {
     setLoading(true);
     try {
-      const res = await fetch(`${import.meta.env.VITE_API_URL}/quizzes`);
+      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3000'; // Fallback to localhost
+      const res = await fetch(`${apiUrl}/quizzes`);
       if (!res.ok) throw new Error('Lỗi khi lấy danh sách quiz');
       const data = await res.json();
       setQuizzes(data);
-      // Di chuyển setLoading(false) vào finally để đảm bảo luôn được gọi
     } catch (err) {
       setError('Lỗi khi tải quiz: ' + err.message);
       toast.error('Lỗi khi tải quiz!', { autoClose: 3000 });
     } finally {
-       setLoading(false); // Đảm bảo setLoading được gọi
+      setLoading(false);
     }
   };
 
@@ -82,14 +81,12 @@ function AdminDashboard() {
     setCurrentPage(pageNumber);
   };
 
-
   if (loading) return <div className="text-center py-12">Đang tải...</div>;
   if (error) return <div className="text-center py-12 text-red-600">{error}</div>;
 
   return (
     <div className="min-h-screen bg-gray-100 py-12">
       <div className="max-w-6xl mx-auto px-4">
-        {/* ... (Phần header và search giữ nguyên) ... */}
         <div className="flex justify-between items-center mb-12">
           <h1 className="text-4xl font-bold text-gray-800">Quản lý Quiz</h1>
           <div className="flex space-x-4">
@@ -98,7 +95,6 @@ function AdminDashboard() {
                 Thêm Quiz Mới
               </button>
             </Link>
-            {/* Thêm nút Xem Thống Kê */}
             <Link to="/admin/stats">
               <button className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
                 Xem Thống Kê
@@ -122,7 +118,6 @@ function AdminDashboard() {
             className="w-full px-4 py-2 border rounded-lg"
           />
         </div>
-
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {currentQuizzes.length === 0 ? (
@@ -161,21 +156,18 @@ function AdminDashboard() {
                       Sửa
                     </button>
                   </Link>
-                  {/* Di chuyển comment ra ngoài hoặc xóa đi */}
                   <button
                     onClick={() => openDeleteModal(quiz)}
                     className="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition text-sm"
                   >
                     Xóa
                   </button>
-                  {/* Comment có thể đặt ở đây: Giảm cỡ chữ nút */}
                 </div>
               </div>
             ))
           )}
         </div>
 
-        {/* ... (Phần phân trang, Modal và ToastContainer giữ nguyên) ... */}
         {totalPages > 1 && (
           <div className="flex justify-center mt-8 space-x-2">
             {Array.from({ length: totalPages }, (_, index) => (

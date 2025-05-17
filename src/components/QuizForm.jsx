@@ -39,7 +39,8 @@ function QuizForm() {
   useEffect(() => {
     if (id) {
       setLoading(true);
-      fetch(`${import.meta.env.VITE_API_URL}/quizzes/${id}`)
+      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3000'; // Fallback to localhost
+      fetch(`${apiUrl}/quizzes/${id}`)
         .then((res) => {
           if (!res.ok) throw new Error('Không tìm thấy quiz');
           return res.json();

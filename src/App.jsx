@@ -24,6 +24,7 @@ import LeaderBoard from "./components/LeaderBoard";
 function App() {
   // Thêm log để kiểm tra xem App có bị render lại không cần thiết không
   console.log(">>> [App] Component rendering...");
+  console.log('VITE_API_URL:', import.meta.env.VITE_API_URL || 'http://localhost:3000');
 
   return (
     // UserProvider và AuthProvider có thể gây render lại nếu state thay đổi

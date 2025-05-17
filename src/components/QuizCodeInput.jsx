@@ -15,7 +15,8 @@ function QuizCodeInput() {
 
   // Fetch tiêu đề quiz để hiển thị
   useEffect(() => {
-    fetch(`${import.meta.env.VITE_API_URL}/quizzes/${quizId}`)
+    const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3000'; // Fallback to localhost
+    fetch(`${apiUrl}/quizzes/${quizId}`)
       .then(res => {
         if (!res.ok) throw new Error('Không thể tải thông tin quiz');
         return res.json();
@@ -24,8 +25,6 @@ function QuizCodeInput() {
       .catch(err => {
         console.error("Lỗi tải tiêu đề quiz:", err);
         setError('Không tìm thấy bài quiz này.');
-        // Có thể navigate về trang chủ nếu quizId không hợp lệ
-        // navigate('/');
       });
   }, [quizId]); // Chỉ chạy khi quizId thay đổi
 
