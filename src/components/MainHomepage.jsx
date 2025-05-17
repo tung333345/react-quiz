@@ -18,8 +18,8 @@ function MainHomepage() {
   const fetchQuizzes = async () => {
     setLoading(true);
     try {
-      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3000'; // Fallback to localhost
-      const res = await fetch(`${apiUrl}/quizzes`); // Use the correct base URL
+      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+      const res = await fetch(`${apiUrl}/quizzes`);
       if (!res.ok) throw new Error('Lỗi khi lấy danh sách quiz');
       const data = await res.json();
       console.log('Quizzes:', data);
