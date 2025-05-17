@@ -2,7 +2,7 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}", // Đảm bảo bao gồm tất cả các tệp cần thiết
   ],
   theme: {
     extend: {},
